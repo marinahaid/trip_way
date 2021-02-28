@@ -1,0 +1,251 @@
+.trip-top {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.trip-top__container {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 235px;
+  background-image: url("../img/mobile-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
+  background-size: cover;
+  display: block;
+  z-index: -1;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/mobile-1-2.jpg");
+    background-size: cover;
+  }
+}
+
+.trip-top__title {
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 36px;
+  padding-top: 82px;
+  font-weight: 600;
+}
+
+.trip-top__text {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 16px;
+  padding-bottom: 20px;
+  line-height: 170%;
+  letter-spacing: -0.47px;
+  color: $color;
+  font-weight: 400;
+}
+
+.trip-top__block {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.trip-top__link {
+  margin: 0 auto;
+  width: 288px;
+  background-color: $color-basic;
+  padding: 18px 0;
+  display: flex;
+
+  &:active {
+    background-color: $color-active;
+  }
+}
+
+.trip-top__link--text {
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 44px;
+}
+
+.trip-top__icon {
+  width: 14px;
+  height: 14px;
+  fill: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 87px;
+}
+
+@media (min-width: $tablet-width) {
+  .trip-top__container {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 344px;
+    background-image: url("../img/tablet-1.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/tablet-1-2.jpg");
+      background-size: cover;
+    }
+  }
+
+  .trip-top__title {
+    width: 398px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    padding-top: 65px;
+  }
+
+  .trip-top__block {
+    margin-top: 20px;
+    position: absolute;
+    width: 402px;
+    margin-top: 0px;
+    left: 50%;
+    transform: translateX(-200px);
+    bottom: 83px;
+  }
+
+  .trip-top__text {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    padding-bottom: 11px;
+    line-height: 27px;
+    color: #ffffff;
+    letter-spacing: -0.47px;
+  }
+
+  .trip-top__link {
+    width: 250px;
+  }
+
+  .trip-top__link--text {
+    font-weight: 500;
+    letter-spacing: 2.3px;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-left: 38px;
+  }
+
+  .trip-top__icon {
+    margin-left: 49px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .trip-top {
+    position: static;
+  }
+
+  .trip-top__container {
+    width: 100%;
+    height: 860px;
+    background-color: #fbf8f8;
+    background-image: url("../img/desk-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: absolute;
+    right: unset;
+    left: 0;
+    top: 0;
+    display: block;
+    z-index: -1;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/desk-1-2.jpg");
+      background-size: cover;
+    }
+  }
+
+  .trip-top__title {
+    width: 380px;
+    text-align: left;
+    color: #ffffff;
+    font-size: 55px;
+    line-height: 78px;
+    padding-top: 82px;
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    transform: translateX(103px);
+    top: 150px;
+  }
+
+  .trip-top__block {
+    position: absolute;
+    width: 401px;
+    left: 50%;
+    transform: translateX(102px);
+    top: 426px;
+  }
+
+  .trip-top__text {
+    width: 98%;
+    margin: 0 auto;
+    font-size: 16px;
+    padding-bottom: 35px;
+    line-height: 27px;
+    letter-spacing: -0.3px;
+    color: #fff;
+    text-align: left;
+  }
+
+  .trip-top__link {
+    width: 345px;
+    margin-left: 0;
+    padding: 27px 0;
+  }
+
+  .trip-top__link--text {
+    margin-left: 70px;
+  }
+
+  .trip-top__icon {
+    margin-left: 87px;
+  }
+}
+
+@media (min-width: $desktop-width-only) {
+  .trip-top {
+    margin-bottom: 54px;
+    max-width: 100%;
+    min-height: 569px;
+  }
+
+  .trip-top__container {
+    width: 100%;
+    height: 960px;
+  }
+
+  .trip-top__title {
+    width: 400px;
+    transform: translateX(114px);
+    top: 204px;
+  }
+
+  .trip-top__block {
+    transform: translateX(111px);
+    top: 473px;
+  }
+
+  .trip-top__link {
+    padding: 30px 0;
+  }
+
+  .trip-top__link--text {
+    font-size: 12px;
+    margin-left: 44px;
+  }
+
+  .trip-top__icon {
+    margin-left: 122px;
+  }
+}
